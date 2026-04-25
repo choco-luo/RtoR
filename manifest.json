@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Xiaohongshu to Rednote Redirect",
+  "name": "RtoR紅薯網址協助跳轉",
   "version": "1.0.0",
   "description": "Redirect www.xiaohongshu.com to www.rednote.com.",
   "permissions": [
