@@ -1,0 +1,17 @@
+{
+  "name": "misu",
+  "version": "1.0.0",
+  "description": "Browser extension that redirects www.xiaohongshu.com to www.rednote.com",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -w -p tsconfig.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "@types/chrome": "^0.1.40",
+    "typescript": "^6.0.3"
+  }
+}

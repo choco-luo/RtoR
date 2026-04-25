@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rednote Redirect</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>Rednote Redirect</h1>
+      <p class="hint">只在 xiaohongshu 首頁導覽時進行轉址。</p>
+      <label class="toggle-row" for="redirectToggle">
+        <span>啟用轉址</span>
+        <input id="redirectToggle" type="checkbox" />
+      </label>
+      <p id="statusText" class="status" aria-live="polite">讀取中...</p>
+    </main>
+    <script type="module" src="dist/popup.js"></script>
+  </body>
+</html>
