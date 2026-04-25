@@ -4,7 +4,9 @@
   "description": "Browser extension that redirects www.xiaohongshu.com to www.rednote.com",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "watch": "tsc -w -p tsconfig.json"
+    "watch": "tsc -w -p tsconfig.json",
+    "pack:zip": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"Remove-Item -Recurse -Force ./release -ErrorAction SilentlyContinue; New-Item -ItemType Directory -Path ./release | Out-Null; Copy-Item ./manifest.json ./release/; Copy-Item ./dist ./release/dist -Recurse; Copy-Item ./ui ./release/ui -Recurse; Copy-Item ./assets ./release/assets -Recurse; Compress-Archive -Path ./release/* -DestinationPath ./misu-extension.zip -Force\"",
+    "pack": "npm run build && npm run pack:zip"
   },
   "keywords": [],
   "author": "",
